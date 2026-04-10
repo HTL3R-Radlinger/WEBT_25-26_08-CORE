@@ -1,0 +1,21 @@
+{
+    "name": "htl/fc-bigfoot",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "homepage": "https://webt-25-26-08-core.ddev.site",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "bk2k/bootstrap-package": "^15.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Htl\\FcBigfoot\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "fc_bigfoot"
+        }
+    }
+}

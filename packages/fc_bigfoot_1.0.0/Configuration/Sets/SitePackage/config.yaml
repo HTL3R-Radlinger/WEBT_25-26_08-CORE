@@ -1,0 +1,4 @@
+name: htl/fc-bigfoot
+label: 'FC Bigfoot'
+dependencies:
+  - bootstrap-package/full

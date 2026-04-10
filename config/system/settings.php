@@ -35,6 +35,16 @@ return [
             'loginLogo' => '',
             'loginLogoAlt' => '',
         ],
+        'bootstrap_package' => [
+            'disableCssProcessing' => '0',
+            'disableGoogleFontCaching' => '0',
+            'disablePageTsBackendLayouts' => '0',
+            'disablePageTsContentElements' => '0',
+            'disablePageTsRTE' => '0',
+            'disablePageTsTCADefaults' => '0',
+            'disablePageTsTCEFORM' => '0',
+            'disablePageTsTCEMAIN' => '0',
+        ],
         'extensionmanager' => [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
@@ -111,6 +121,7 @@ return [
             'security.system.enforceAllowedFileExtensions' => true,
         ],
         'sitename' => 'core8',
+        'systemLocale' => 'en_US',
         'systemMaintainers' => [
             1,
         ],

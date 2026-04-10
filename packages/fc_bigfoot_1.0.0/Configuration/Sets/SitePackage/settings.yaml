@@ -1,0 +1,28 @@
+plugin:
+  bootstrap_package:
+    settings:
+      scss:
+        primary: '#eb3e4a'
+        secondary: '#013859'
+    view:
+      layoutRootPath: 'EXT:fc_bigfoot/Resources/Private/Layouts/'
+      partialRootPath: 'EXT:fc_bigfoot/Resources/Private/Partials/'
+      templateRootPath: 'EXT:fc_bigfoot/Resources/Private/Templates/'
+  bootstrap_package_contentelements:
+    view:
+      layoutRootPath: 'EXT:fc_bigfoot/Resources/Private/Layouts/ContentElements/'
+      partialRootPath: 'EXT:fc_bigfoot/Resources/Private/Partials/ContentElements/'
+      templateRootPath: 'EXT:fc_bigfoot/Resources/Private/Templates/ContentElements/'
+page:
+  logo:
+    file: 'EXT:fc_bigfoot/Resources/Public/Images/logo.svg'
+    fileInverted: 'EXT:fc_bigfoot/Resources/Public/Images/logo-inverted.svg'
+    width: 192
+    alt: 'My Site Package'
+    linktitle: 'My Site Package'
+  favicon:
+    file: 'EXT:fc_bigfoot/Resources/Public/Icons/favicon.ico'
+  fluidtemplate:
+    layoutRootPath: 'EXT:fc_bigfoot/Resources/Private/Layouts/Page/'
+    partialRootPath: 'EXT:fc_bigfoot/Resources/Private/Partials/Page/'
+    templateRootPath: 'EXT:fc_bigfoot/Resources/Private/Templates/Page/'

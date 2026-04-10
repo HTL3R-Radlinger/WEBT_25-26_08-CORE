@@ -1,0 +1,21 @@
+page {
+    includeCSS {
+        theme = EXT:fc_bigfoot/Resources/Public/Scss/Theme/theme.scss
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        fc_bigfoot_scripts = EXT:fc_bigfoot/Resources/Public/JavaScript/main.js
+    }
+}
