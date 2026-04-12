@@ -6,6 +6,8 @@ Nach Extention install -> Admin Tools -> Analyze Database Structure
 Incorrect systemLocale setting
 Current value of the $GLOBALS[TYPO3_CONF_VARS][SYS][systemLocale] is incorrect. A locale with this name doesn't exist in the operating system.
 -> Settings z.124
+US4: Das Bild-Cropping-Tool wurde verwendet, um das Hauptbanner korrekt
+zuzuschneiden.
 
 # US1
 Hauptseite -> Behavior -> "Use as Root Page"
@@ -16,3 +18,16 @@ Seiten erstellt
 Tickets zu Link umgewandelt
 
 # US3
+- Logo: Images Only
+- Überschrift: Header Only
+- Einführungstext: Regular Text Element
+
+- Mannschaft: Text & Images
+
+- Spielplan: Table
+
+- News: Insert Records
+    - Es wurden Elemente von Hauptseite, Mannschaft und Spielplan verlinkt
+
+# US4
+- YouTube: External Media auf Hauptseite
