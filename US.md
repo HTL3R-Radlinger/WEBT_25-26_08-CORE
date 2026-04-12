@@ -8,6 +8,7 @@ Current value of the $GLOBALS[TYPO3_CONF_VARS][SYS][systemLocale] is incorrect. 
 -> Settings z.124
 US4: Das Bild-Cropping-Tool wurde verwendet, um das Hauptbanner korrekt
 zuzuschneiden.
+US6: Bei "List" einen Datensatz für die Mannschaft? Oder daten direkt rein geben?
 
 # US1
 Hauptseite -> Behavior -> "Use as Root Page"
@@ -31,3 +32,8 @@ Tickets zu Link umgewandelt
 
 # US4
 - YouTube: External Media auf Hauptseite
+
+# US5
+- Unterseiten wurden erstellt
+
+# US6
