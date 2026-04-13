@@ -2,14 +2,6 @@
 Admin tools nur der Maintainer (nicht Admin)
 Nach Extention install -> Admin Tools -> Analyze Database Structure
 
-# FRAGEN
-Incorrect systemLocale setting
-Current value of the $GLOBALS[TYPO3_CONF_VARS][SYS][systemLocale] is incorrect. A locale with this name doesn't exist in the operating system.
--> Settings z.124
-US4: Das Bild-Cropping-Tool wurde verwendet, um das Hauptbanner korrekt
-zuzuschneiden.
-US6: Bei "List" einen Datensatz für die Mannschaft? Oder daten direkt rein geben?
-
 # US1
 Hauptseite -> Behavior -> "Use as Root Page"
 URL -> Sites -> Site Identifier
@@ -28,12 +20,12 @@ Tickets zu Link umgewandelt
 - Spielplan: Table
 
 - News: Insert Records
-    - Es wurden Elemente von Hauptseite, Mannschaft und Spielplan verlinkt
+    - Verbinden von Storage
 
 # US4
 - YouTube: External Media auf Hauptseite
 
 # US5
-- Unterseiten wurden erstellt
+
 
 # US6

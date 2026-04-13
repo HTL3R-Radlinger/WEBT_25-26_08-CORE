@@ -1,5 +1,6 @@
 base: 'https://webt-25-26-08-core.ddev.site/fc-bigfoot'
 dependencies:
+  - bootstrap-package/full
   - htl/fc-bigfoot
 languages:
   -
