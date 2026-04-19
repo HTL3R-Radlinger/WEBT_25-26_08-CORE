@@ -2,11 +2,6 @@
 Admin tools nur der Maintainer (nicht Admin)
 Nach Extention install -> Admin Tools -> Analyze Database Structure
 
-# Fragen
-## US7
-- Canonical-Tags sind aktiviert, um Duplicate Content zu vermeiden.
-- Die Website ist in der XML-Sitemap für Suchmaschinen indexiert.
-
 # US1
 ddev composer req htl/fc-bigfoot:@dev
 
@@ -32,27 +27,22 @@ Tickets zu Link umgewandelt
 # US4
 - YouTube: External Media auf Hauptseite
 
-# US5
-
-
-# US6
-
-
 # US7
 https://webt-25-26-08-core.ddev.site/fc-bigfoot/sitemap.xml
-
 
 
 # US8
 Kategorien unter Sponsoren-Data
 
 # US9
-PW: Adminadmin1!
+PW für alle User: Adminadmin1!
 
+Trainer:
 FranzStimpfl
 FlorianWeiss
 MatthiasWagner
 
+Spieler:
 AlexanderBachinger
 FelixRadbauer
 SujingYe
@@ -61,4 +51,7 @@ SujingYe
 
 
 # US11
-Healthinspector
+Backend User: Healthinspector
+PW: Adminadmin1!
+
+Dashboard rechte über Backend-group "health" vergeben
