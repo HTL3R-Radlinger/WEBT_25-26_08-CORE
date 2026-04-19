@@ -2,6 +2,7 @@ base: 'https://webt-25-26-08-core.ddev.site/fc-bigfoot'
 dependencies:
   - bootstrap-package/full
   - htl/fc-bigfoot
+  - typo3/seo-sitemap
 languages:
   -
     title: English
@@ -13,3 +14,8 @@ languages:
     flag: us
 rootPageId: 1
 websiteTitle: ''
+routeEnhancers:
+  PageTypeSuffix:
+    type: PageType
+    map:
+      sitemap.xml: 1533906435

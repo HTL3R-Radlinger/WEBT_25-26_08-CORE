@@ -39,6 +39,8 @@ Tickets zu Link umgewandelt
 
 
 # US7
+https://webt-25-26-08-core.ddev.site/fc-bigfoot/sitemap.xml
+
 
 
 # US8
