@@ -1,0 +1,15 @@
+base: 'https://webt-25-26-08-core.ddev.site'
+dependencies:
+  - htl/fc-bigfoot
+  - typo3/seo-sitemap
+languages:
+  -
+    title: English
+    enabled: true
+    languageId: 0
+    base: /
+    locale: en_US.UTF-8
+    navigationTitle: English
+    flag: us
+rootPageId: 36
+websiteTitle: ''
