@@ -24,4 +24,3 @@
 - Sauberer HTML-Code
 - Semantische Strukturierung
 - Kompatibilität mit Screenreadern
-
