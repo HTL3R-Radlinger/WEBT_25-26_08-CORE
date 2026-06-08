@@ -1,6 +1,7 @@
 base: 'https://webt-25-26-08-core.ddev.site/goldener-drache'
 dependencies:
   - bootstrap-package/full
+  - htl3r/fortune
 languages:
   -
     title: English

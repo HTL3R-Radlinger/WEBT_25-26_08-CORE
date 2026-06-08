@@ -1,0 +1,4 @@
+name: htl3r/fortune
+label: Fortune Cookie
+dependencies:
+  - typo3/fluid-styled-content

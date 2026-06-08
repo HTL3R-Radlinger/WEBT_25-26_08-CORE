@@ -6,23 +6,25 @@ namespace Htl3r\Fortune\Domain\Repository;
 
 use Htl3r\Fortune\Domain\Model\Message;
 use TYPO3\CMS\Extbase\Persistence\Repository;
+use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
 
-/**
- * @extends Repository<Message>
- */
 class MessageRepository extends Repository
 {
-    /**
-     * Returns a deterministic "random" message based on the current day.
-     * The seed changes every day so visitors always get the same message
-     * throughout one day but a different one the next.
-     */
+//    public function initializeObject(): void
+//    {
+//        /** @var Typo3QuerySettings $querySettings */
+//        $querySettings = $this->createQuery()->getQuerySettings();
+//        $querySettings->setRespectStoragePage(true);
+//        $querySettings->setStoragePageIds([45]);
+//
+//        $this->setDefaultQuerySettings($querySettings);
+//    }
+
     public function findMessageOfTheDay(): ?Message
     {
+//        $query = $this->createQuery();
+//        $all = $query->execute()->toArray();
         $all = $this->findAll()->toArray();
-
-//        var_dump($this->findAll());
-//        var_d ump($all);
 
         if (empty($all)) {
             return null;
