@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4c843e94a8aa4ae4f33e29b7c3cda6d1",
+    "content-hash": "e3631e1b9f6591bece0e27a7719f20fa",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1278,6 +1278,36 @@
             "keywords": [
                 "TYPO3 CMS"
             ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "htl3r/fortune",
+            "version": "0.0.1",
+            "dist": {
+                "type": "path",
+                "url": "./packages/fortune",
+                "reference": "bde77e63995983838c7fb1a7879b58f36ea1160e"
+            },
+            "require": {
+                "typo3/cms-core": "^13.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "fortune"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Htl3r\\Fortune\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Shows a fortune cookie message",
             "transport-options": {
                 "relative": true
             }
@@ -7250,7 +7280,69 @@
             "time": "2026-02-27T10:28:38+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "b13/make",
+            "version": "0.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/b13/make.git",
+                "reference": "d7f302a0211aeab90ac15825bf49fdf914d79ed9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/b13/make/zipball/d7f302a0211aeab90ac15825bf49fdf914d79ed9",
+                "reference": "d7f302a0211aeab90ac15825bf49fdf914d79ed9",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "^10.0 || ^11.0 || ^12.0 || ^13.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.4",
+                "typo3/cms-core": "^11.5",
+                "typo3/coding-standards": "^0.5",
+                "typo3/tailor": "^1.4",
+                "typo3/testing-framework": "^7.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "web-dir": ".Build/Web",
+                    "extension-key": "make",
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "B13\\Make\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Bartsch",
+                    "email": "oliver.bartsch@b13.com"
+                }
+            ],
+            "description": "Kickstarter CLI tool for various TYPO3 functionalities",
+            "homepage": "https://b13.com",
+            "keywords": [
+                "cli",
+                "extensions",
+                "kickstarter",
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://github.com/b13/make/issues",
+                "source": "https://github.com/b13/make/tree/0.1.8"
+            },
+            "time": "2024-08-05T08:25:45+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {

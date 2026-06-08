@@ -15,6 +15,7 @@
 	},
 	"require": {
 		"htl/fc-bigfoot": "@dev",
+		"htl3r/fortune": "^0.0.1",
 		"typo3/cms-backend": "^13.4",
 		"typo3/cms-belog": "^13.4",
 		"typo3/cms-beuser": "^13.4",
@@ -46,5 +47,8 @@
 			"type": "path",
 			"url": "./packages/*"
 		}
-	]
+	],
+	"require-dev": {
+		"b13/make": "^0.1.8"
+	}
 }
