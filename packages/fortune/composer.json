@@ -1,11 +1,9 @@
 {
     "name": "htl3r/fortune",
-    "description": "Shows a fortune cookie message",
+    "description": "Fortune Cookie Message of the Day for Goldener Drache",
     "type": "typo3-cms-extension",
     "version": "0.0.1",
-    "license": [
-        "GPL-2.0-or-later"
-    ],
+    "license": "GPL-2.0-or-later",
     "require": {
         "typo3/cms-core": "^13.0"
     },

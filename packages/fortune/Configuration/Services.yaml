@@ -3,6 +3,7 @@ services:
     autowire: true
     autoconfigure: true
     public: false
+
   Htl3r\Fortune\:
     resource: '../Classes/*'
     exclude: '../Classes/Domain/Model/*'

@@ -2,40 +2,35 @@
 
 declare(strict_types=1);
 
-namespace HTL3r\Fortune\Domain\Repository;
+namespace Htl3r\Fortune\Domain\Repository;
 
-use HTL3r\Fortune\Domain\Model\Message;
-use TYPO3\CMS\Extbase\Persistence\QueryInterface;
+use Htl3r\Fortune\Domain\Model\Message;
 use TYPO3\CMS\Extbase\Persistence\Repository;
 
 /**
- * Picks one message per day deterministically:
- * All messages are sorted by UID, then a stable index is derived
- * by hashing today's date (Y-m-d) with crc32.
- * Every visitor sees the same message on a given day, and it
- * changes at midnight without any scheduled date field.
+ * @extends Repository<Message>
  */
 class MessageRepository extends Repository
 {
-    public function findForToday(): ?Message
+    /**
+     * Returns a deterministic "random" message based on the current day.
+     * The seed changes every day so visitors always get the same message
+     * throughout one day but a different one the next.
+     */
+    public function findMessageOfTheDay(): ?Message
     {
-//        $query = $this->createQuery();
-//        $query->setOrderings(['uid' => QueryInterface::ORDER_ASCENDING]);
-//        $pool = $query->execute()->toArray();
+        $all = $this->findAll()->toArray();
 
-//        if ($pool === []) {
-//            return null;
-//        }
+//        var_dump($this->findAll());
+//        var_d ump($all);
 
-//        $dateKey = new \DateTimeImmutable('today')->format('Y-m-d');
-//        $index   = abs(crc32($dateKey)) % count($pool);
+        if (empty($all)) {
+            return null;
+        }
 
-//        return $pool[$index];
-//        return $pool[0];
-        $query = $this->createQuery();
-        $query->setOrderings(['uid' => QueryInterface::ORDER_ASCENDING]);
-        $query->setLimit(1);
-        return $query->execute()->getFirst();
+        $daySeed = (int)date('z') + (int)date('Y') * 366;
+        $index = $daySeed % count($all);
 
+        return $all[$index];
     }
 }
