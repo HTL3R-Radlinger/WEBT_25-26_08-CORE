@@ -28,7 +28,7 @@ class FortuneController extends ActionController
         $html = <<<HTML
         <div class="lucky-message">
             <div class="lucky-message__icon">🥠</div>
-            <blockquote class="lucky-message__text">{$text}</blockquote>
+            <code class="lucky-message__text" style="color: black;">{$text}</code>
         </div>
     HTML;
 
