@@ -1,2 +1,6 @@
+# Export (Projekt muss laufen)
 ddev start
-ddev import-db --file=db_export.sql.gz
+ddev export-db --file=backup.sql.gz
+
+# Import auf neuem System
+ddev import-db --file=backup.sql.gz
